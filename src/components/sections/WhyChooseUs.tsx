@@ -65,7 +65,7 @@ export default function WhyChooseUs() {
               <span className="text-secondary font-bold tracking-wider uppercase text-sm">Why Choose Us</span>
             </div>
             <h2 className="font-serif text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              The Shivam Reality Advantage
+              The Shivam Realty Advantage
             </h2>
             <p className="text-white/80 text-lg leading-relaxed mb-8">
               Navigating the real estate market can be overwhelming. We bring clarity, expertise, and trust to ensure you make the best property decisions without any stress.

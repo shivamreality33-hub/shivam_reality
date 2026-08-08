@@ -21,7 +21,7 @@ export default function About() {
             <div className="relative h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="/images/about.png"
-                alt="Shivam Reality Team Meeting"
+                alt="Shivam Realty Team Meeting"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -57,7 +57,7 @@ export default function About() {
 
             <div className="space-y-6 text-text-muted text-lg leading-relaxed mb-10">
               <p>
-                At <strong>Shivam Reality</strong>, we work as a trusted channel partner for reputed builders and developers. We don't just sell properties; we build lasting relationships based on trust, integrity, and exceptional service.
+                At <strong>Shivam Realty</strong>, we work as a trusted channel partner for reputed builders and developers. We don't just sell properties; we build lasting relationships based on trust, integrity, and exceptional service.
               </p>
               <p>
                 Our mission is to simplify the complex real estate buying process. We help buyers identify the right property according to their unique needs, lifestyle aspirations, and investment goals, providing transparent guidance from your very first enquiry all the way to possession.

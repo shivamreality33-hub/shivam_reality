@@ -13,20 +13,20 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Shivam Reality | RERA Registered Real Estate Channel Partner",
+  title: "Shivam Realty | RERA Registered Real Estate Channel Partner",
   description: "Helping individuals, families, and investors make informed real estate decisions with transparency, trust, and expert guidance. Your trusted RERA registered channel partner.",
-  keywords: ["Shivam Reality", "Real Estate", "Channel Partner", "Property Consultation", "RERA Registered"],
+  keywords: ["Shivam Realty", "Real Estate", "Channel Partner", "Property Consultation", "RERA Registered"],
   openGraph: {
-    title: "Shivam Reality | Real Estate Consulting",
+    title: "Shivam Realty | Real Estate Consulting",
     description: "Your trusted RERA registered real estate channel partner.",
     type: "website",
     locale: "en_US",
-    url: "https://shivamreality.example.com",
-    siteName: "Shivam Reality",
+    url: "https://shivamrealty.example.com",
+    siteName: "Shivam Realty",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shivam Reality",
+    title: "Shivam Realty",
     description: "Your trusted RERA registered real estate channel partner.",
   }
 };

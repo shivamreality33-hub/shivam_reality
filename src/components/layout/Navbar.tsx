@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Logo from "./Logo";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -72,9 +73,12 @@ export default function Navbar() {
         {/* Logo */}
         <Link 
           href="/" 
-          className={`font-serif text-2xl font-bold tracking-wider ${textClass}`}
+          className="flex items-center"
         >
-          SHIVAM<span className="text-secondary font-light">REALITY</span>
+          <Logo 
+            variant={isScrolled || !isHomePage ? "dark" : "light"} 
+            className="w-[145px] md:w-[160px]"
+          />
         </Link>
 
         {/* Desktop Menu */}

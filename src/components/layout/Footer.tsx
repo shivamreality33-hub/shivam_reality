@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowUp, Mail, MapPin, Phone } from "lucide-react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { ArrowUp, Mail, Phone } from "lucide-react";
+import { FaInstagram } from "react-icons/fa";
+import Logo from "./Logo";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -19,24 +20,21 @@ export default function Footer() {
           
           {/* Brand Info */}
           <div className="col-span-1 md:col-span-2 lg:col-span-1">
-            <Link href="#home" className="font-serif text-2xl font-bold tracking-wider text-white inline-block mb-6">
-              SHIVAM<span className="text-secondary font-light">REALITY</span>
+            <Link href="/" className="inline-block mb-6">
+              <Logo variant="light" className="w-[155px]" />
             </Link>
             <p className="text-white/70 leading-relaxed mb-6">
               Your trusted RERA registered real estate channel partner. We guide you through transparent, secure, and profitable property decisions.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-white transition-colors">
-                <FaFacebookF size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-white transition-colors">
-                <FaTwitter size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-white transition-colors">
+              <a 
+                href="https://www.instagram.com/shivam.realty?igsh=MXExMTNrcGI0dW5u" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-white transition-colors"
+                aria-label="Instagram"
+              >
                 <FaInstagram size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-white transition-colors">
-                <FaLinkedinIn size={18} />
               </a>
             </div>
           </div>
@@ -68,7 +66,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {['Residential Property', 'Commercial Spaces', 'Investment Guidance', 'Home Loan Assistance', 'Legal & Documentation'].map((service) => (
                 <li key={service}>
-                  <a href="#services" className="text-white/70 hover:text-secondary transition-colors inline-block">
+                  <a href="/#services" className="text-white/70 hover:text-secondary transition-colors inline-block">
                     {service}
                   </a>
                 </li>
@@ -80,13 +78,11 @@ export default function Footer() {
           <div>
             <h4 className="font-serif text-lg font-semibold mb-6 text-white">Contact Us</h4>
             <ul className="space-y-4">
-              <li className="flex items-start text-white/70">
-                <MapPin className="w-5 h-5 text-secondary mr-3 shrink-0 mt-0.5" />
-                <span>Premium Business Hub, City Center, India</span>
-              </li>
               <li className="flex items-center text-white/70">
                 <Phone className="w-5 h-5 text-secondary mr-3 shrink-0" />
-                <span>+91 98765 43210</span>
+                <a href="tel:+917567714703" className="hover:text-white transition-colors">
+                  +91 75677 14703
+                </a>
               </li>
               <li className="flex items-center text-white/70">
                 <Mail className="w-5 h-5 text-secondary mr-3 shrink-0" />
@@ -101,7 +97,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/50 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Shivam Reality. All rights reserved.
+            &copy; {new Date().getFullYear()} Shivam Realty. All rights reserved.
           </p>
           <div className="flex items-center space-x-6 text-sm text-white/50">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

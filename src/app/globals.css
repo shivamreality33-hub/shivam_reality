@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #0F4C81;
-  --color-secondary: #C8A96A;
-  --color-background: #FAFAFA;
+  --color-primary: #062C4E;
+  --color-secondary: #C3662A;
+  --color-background: #FAF9F6;
   --color-surface: #ffffff;
   --color-text-main: #171717;
   --color-text-muted: #4b5563;
@@ -12,8 +12,9 @@
 }
 
 :root {
-  --background: #FAFAFA;
+  --background: #FAF9F6;
   --foreground: #171717;
+  --dot-color: rgba(6, 44, 78, 0.04);
 }
 
 html {
@@ -22,7 +23,7 @@ html {
 
 body {
   background-color: var(--background);
-  background-image: radial-gradient(var(--color-primary) 0.5px, transparent 0.5px), radial-gradient(var(--color-primary) 0.5px, transparent 0.5px);
+  background-image: radial-gradient(var(--dot-color) 0.5px, transparent 0.5px), radial-gradient(var(--dot-color) 0.5px, transparent 0.5px);
   background-size: 40px 40px;
   background-position: 0 0, 20px 20px;
   background-attachment: fixed;

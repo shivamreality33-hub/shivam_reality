@@ -62,7 +62,7 @@ export default function Process() {
 
         <div className="relative">
           {/* Connecting Line (Desktop) */}
-          <div className="hidden lg:block absolute top-1/2 left-0 w-full h-[2px] bg-gray-200 -translate-y-1/2 z-0"></div>
+          <div className="hidden lg:block absolute top-8 left-[7.2%] right-[7.2%] border-t-2 border-dashed border-secondary/30 -translate-y-1/2 z-0"></div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-8 lg:gap-4 relative z-10">
             {steps.map((step, index) => {

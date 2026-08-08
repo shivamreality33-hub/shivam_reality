@@ -1,0 +1,24 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Elegant Letter S -->
+  <text
+    x="15.5"
+    y="21"
+    text-anchor="middle"
+    font-weight="800"
+    font-size="20"
+    fill="#062C4E"
+    style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;"
+  >
+    S
+  </text>
+  <!-- Curved Orange Line under S -->
+  <path
+    d="M 6 23.5 C 11 25.2, 20 25.2, 25 23.5 C 20 22.2, 11 22.2, 6 23.5 Z"
+    fill="#C3662A"
+  />
+  <!-- Small Elegant Sparkle in Top-Right -->
+  <path
+    d="M 23 10 C 23 10, 25 10, 25 8 C 25 10, 27 10, 27 10 C 27 10, 25 10, 25 12 C 25 10, 23 10, 23 10 Z"
+    fill="#C3662A"
+  />
+</svg>

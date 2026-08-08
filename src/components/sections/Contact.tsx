@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, MapPin, Phone, Send, Loader2, CheckCircle } from "lucide-react";
+import { Mail, Phone, Send, Loader2, CheckCircle } from "lucide-react";
 
 export default function Contact() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -60,16 +60,6 @@ export default function Contact() {
             <div className="space-y-8 mb-12">
               <div className="flex items-start">
                 <div className="w-14 h-14 bg-primary/5 rounded-full flex items-center justify-center shrink-0 mr-6">
-                  <MapPin className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-bold text-text-main text-lg mb-1">Office Location</h4>
-                  <p className="text-text-muted">Premium Business Hub, City Center, India</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="w-14 h-14 bg-primary/5 rounded-full flex items-center justify-center shrink-0 mr-6">
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
                 <div>
@@ -86,7 +76,10 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-text-main text-lg mb-1">Call Us</h4>
-                  <p className="text-text-muted">+91 98765 43210 (Mon-Sat, 10am-7pm)</p>
+                  <a href="tel:+917567714703" className="text-text-muted hover:text-primary transition-colors">
+                    +91 75677 14703
+                  </a>
+                  <p className="text-text-muted text-sm mt-0.5">(Mon-Sat, 10am-7pm)</p>
                 </div>
               </div>
             </div>
@@ -95,7 +88,7 @@ export default function Contact() {
               <a href="mailto:shivam.reality33@gmail.com" className="px-6 py-3 bg-primary text-white rounded-full font-medium hover:bg-primary/90 transition-colors shadow-md">
                 Email Us
               </a>
-              <a href="tel:+919876543210" className="px-6 py-3 border border-primary text-primary rounded-full font-medium hover:bg-primary/5 transition-colors">
+              <a href="tel:+917567714703" className="px-6 py-3 border border-primary text-primary rounded-full font-medium hover:bg-primary/5 transition-colors">
                 Call Now
               </a>
             </div>
@@ -113,8 +106,8 @@ export default function Contact() {
               <h3 className="font-serif text-2xl font-bold text-primary mb-6">Book a Free Consultation</h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
-                <input type="hidden" name="subject" value="New Enquiry from Shivam Reality Website" />
-                <input type="hidden" name="from_name" value="Shivam Reality Website" />
+                <input type="hidden" name="subject" value="New Enquiry from Shivam Realty Website" />
+                <input type="hidden" name="from_name" value="Shivam Realty Website" />
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -136,7 +129,7 @@ export default function Contact() {
                       id="phone" 
                       required 
                       className="w-full px-4 py-3 rounded-xl bg-background border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none"
-                      placeholder="+91 98765 43210"
+                      placeholder="+91 75677 14703"
                     />
                   </div>
                 </div>
